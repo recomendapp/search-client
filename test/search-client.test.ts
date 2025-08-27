@@ -13,7 +13,7 @@ async function runTests() {
 
   try {
     console.log('\n🔍 Testing global search for "weapons"...');
-    const allResults = await client.searchAll(
+    const allResults = await client.searchBestResults(
       { query: 'weapons' },
       { accessToken: TEST_CONFIG.accessToken, locale: 'en-US' }
     );

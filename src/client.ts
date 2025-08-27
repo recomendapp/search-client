@@ -1,7 +1,7 @@
 import axios, { AxiosInstance } from 'axios';
 import type {
-  AllSearchQuery,
-  AllSearchResponse,
+  BestResultsSearchQuery,
+  BestResultsSearchResponse,
   MovieSearchQuery,
   MovieSearchResponse,
   TvSeriesSearchQuery,
@@ -68,8 +68,8 @@ export class SearchClient {
 	}
   }
 
-  public searchAll(params: AllSearchQuery, options?: RequestOptions): Promise<AllSearchResponse> {
-	return this.request('/search', params, options);
+  public searchBestResults(params: BestResultsSearchQuery, options?: RequestOptions): Promise<BestResultsSearchResponse> {
+	return this.request('/search/best-results', params, options);
   }
 
   public searchMovies(params: MovieSearchQuery, options?: RequestOptions): Promise<MovieSearchResponse> {

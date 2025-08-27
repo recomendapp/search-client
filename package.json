@@ -25,7 +25,7 @@
     "registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
-    "@recomendapp/types": "^1.0.1",
+    "@recomendapp/types": "^1.0.2",
     "axios": "^1.11.0"
   },
   "devDependencies": {
